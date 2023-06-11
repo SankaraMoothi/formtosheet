@@ -5,7 +5,6 @@ const Home = () => {
   const [data, setdata] = useState([]);
   const navigate = useNavigate();
   const readGoogleSheet = () => {
-    location.reload();
     fetch("https://sheetdb.io/api/v1/bzqxs293k7h5w")
       .then((response) => response.json())
       .then((data) => setdata(data));

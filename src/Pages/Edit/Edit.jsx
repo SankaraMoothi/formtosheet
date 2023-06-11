@@ -37,7 +37,6 @@ const Edit = () => {
       .then((response) => response.json())
       .then((data) => console.log(data));
     navigate("/");
-    location.reload();
   };
   useEffect(() => {
     readGoogleSheet();
